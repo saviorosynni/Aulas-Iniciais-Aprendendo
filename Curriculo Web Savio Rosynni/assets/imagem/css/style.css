@@ -1,0 +1,122 @@
+.foto-perfil {
+  border-radius: 140%;
+  max-width: 130px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgb(72, 99, 99);
+  margin: 30px;
+  margin-left: 20px;
+  height: 130px;
+}
+
+body {
+  background-color: rgb(221, 228, 230);
+}
+header {
+  text-align: center;
+}
+
+#folha {
+  width: 595px;
+  height: 842px;
+  border: 1px solid rgb(3, 3, 3);
+  margin: auto;
+  position: relative;
+}
+#nome {
+  float: left;
+  margin-top: -135px;
+  margin-left: 220px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+#sub-titulo {
+  position: absolute;
+  margin-top: -95px;
+  margin-left: 215px;
+  font-size: 15px;
+}
+#Informações {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -35px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+#lista1 {
+  position: absolute;
+  margin-left: -13px;
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+#Contatos {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 43px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+#lista2 {
+  position: absolute;
+  margin-left: -13px;
+  margin-top: 70px;
+  font-size: 13px;
+}
+
+#linha {
+  margin-top: -5px;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  margin-left: 205px;
+  margin-bottom: 10px;
+}
+#Objetivo {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: -35px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+#text {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#escolaridade {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 50px;
+  font-size: 12px;
+}
+#Formação {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 80px;
+  font-size: 12px;
+}
+#habilidades {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 115px;
+  font-size: 12px;
+}
+#chat {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 145px;
+  font-size: 12px;
+}
+#DISC {
+  border: 1px solid black;
+  margin: 350px;
+  margin-left: 290px;
+  height: 180px;
+}
+#link {
+  margin-top: 4px;
+  margin-left: 70px;
+}
