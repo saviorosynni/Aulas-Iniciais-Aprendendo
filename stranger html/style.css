@@ -1,0 +1,97 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.floresta {
+  background-color: black;
+}
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+/*Agora vou adicionar uma barra no header.*/
+.cabeçalho{
+  background-color:#000000;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: normal;
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+.cabeçalho a{
+  color: #ff1515;
+}
+
+/*AGORA VOU ALINHAR OS ICONES DA MINHA BARRA LATERAL*/
+.logo{
+
+ color: #ff1515;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 40px;
+}
+.barra{
+  height: 100%;
+  width: 175px;
+  background-color: #000000;
+  padding: 15px;
+  position: fixed;
+  top: 39,5px;
+  left: 0;
+  z-index: 1;
+overflow: hidden;
+  
+}
+.barra a{
+  color: #ff1515;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: block;
+  padding: 12px 10px 12px 32px;
+}
+.barra a:hover{
+  color: #010000;
+  background-color: #ff1515;
+}
+main{
+  transition: margin-left 0,5s;
+}
+/*AGORA VOU FAZER O LOGIN*/
+.login{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-35% -35%);
+  padding: 80px;
+  border-radius: 15px;
+  color: #ff1515;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input{
+  padding: 15px;
+  border:none;
+  outline: none;
+  font-size: 15px;
+  display: flex;
+justify-content: center;
+width: 93%;
+}
+button{
+  background-color: #ff1515;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+button:hover{
+  background-color: #5c0707;
+}
