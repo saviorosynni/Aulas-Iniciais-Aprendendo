@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Função para lançar um dado
+int rolarDado() {
+    return rand() % 6 + 1; // Gera um número aleatório entre 1 e 6
+}
+
+// Função para calcular a soma dos valores dos dados
+int calcularSoma(int dado1, int dado2) {
+    return dado1 + dado2;
+}
+
+int main(void) {
+    int jogador1[2], jogador2[2];
+    int somaJogador1, somaJogador2;
+    int jogadasJogador1[10], jogadasJogador2[10]; // Arrays para armazenar jogadas
+    int rodada = 0;
+    srand(time(NULL)); // Semente para a função rand()
+
+    printf("Iniciando jogo de dados.\n\n");
+
+    while (rodada < 10) { // Loop para 10 rodadas
+        printf("Rodada %d\n", rodada + 1);
+
+        printf("Jogador 1, pressione ENTER para rolar os dados.\n");
+        getchar(); // Espera o jogador 1 pressionar ENTER
+        jogador1[0] = rolarDado(); // Lança o primeiro dado do jogador 1
+        jogador1[1] = rolarDado(); // Lança o segundo dado do jogador 1
+        printf("Jogador 1: %d + %d\n", jogador1[0], jogador1[1]);
+        somaJogador1 = calcularSoma(jogador1[0], jogador1[1]);
+        printf("Soma do Jogador 1: %d\n\n", somaJogador1);
+        jogadasJogador1[rodada] = somaJogador1; // Armazena a soma da rodada
+
+        printf("Jogador 2, pressione ENTER para rolar os dados.\n");
+        getchar(); // Espera o jogador 2 pressionar ENTER
+        jogador2[0] = rolarDado(); // Lança o primeiro dado do jogador 2
+        jogador2[1] = rolarDado(); // Lança o segundo dado do jogador 2
+        printf("Jogador 2: %d + %d\n", jogador2[0], jogador2[1]);
+        somaJogador2 = calcularSoma(jogador2[0], jogador2[1]);
+        printf("Soma do Jogador 2: %d\n\n", somaJogador2);
+        jogadasJogador2[rodada] = somaJogador2; // Armazena a soma da rodada
+
+        rodada++; // Incrementa a rodada
+    }
+
+    printf("Fim do jogo.\n\n");
+
+    // Exibindo todas as jogadas dos jogadores
+    printf("Jogadas do Jogador 1:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", jogadasJogador1[i]);
+    }
+    printf("\n");
+
+    printf("\nJogadas do Jogador 2:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", jogadasJogador2[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
